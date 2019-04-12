@@ -13,6 +13,7 @@ package leetcode.sequence1To50;
 //因为 nums[0] + nums[1] = 2 + 7 = 9
 //所以返回 [0, 1]
 
+// Acc Code
 public class Solution1 {
 	public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
