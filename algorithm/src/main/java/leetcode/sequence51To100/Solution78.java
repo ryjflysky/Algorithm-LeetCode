@@ -41,20 +41,24 @@ public class Solution78 {
 			return;
 		}
 		for (int i = j; i < nums.length; i++) {
-			if (!list.contains(nums[i])) {
-				list.add(nums[i]);
+			if (!list.contains(nums[i])) { // 判断这个数字是否被添加过
+				list.add(nums[i]); // 添加元素时是默认添加到末尾
 				lists.add(new ArrayList<>(list));
 				addSubset(n + 1, nums, i, list);
-				list.remove(list.size() - 1);
+				list.remove(list.size() - 1); // 移除元素时，所以移除末尾元素
 			}
 		}
 	}
 	public static void main(String[] args) {
-		Solution78 s = new Solution78();
-		int[] nums = new int[] {1, 2};
-		List<List<Integer>> lists = s.subsets(nums);
-		for (int i = 0; i < lists.size(); i++) {
-			System.out.println(lists.get(i));
-		}
+		System.out.println(Integer.valueOf("-123"));
+		System.out.println(Integer.valueOf("-12"));
+		System.out.println(Integer.valueOf("123"));
+		System.out.println(Integer.valueOf("12"));
+//		Solution78 s = new Solution78();
+//		int[] nums = new int[] {1, 2};
+//		List<List<Integer>> lists = s.subsets(nums);
+//		for (int i = 0; i < lists.size(); i++) {
+//			System.out.println(lists.get(i));
+//		}
 	}
 }
