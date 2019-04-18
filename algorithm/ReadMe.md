@@ -1,6 +1,6 @@
 # Algorithm-LeetCode
 每天一道算法题-LeetCode
-100道题分为一个小模块<br/>
+100道题一个Package<br/>
 
 ### 题目001-100<br/>
   [01-两数之和](https://github.com/ryjflysky/Algorithm-LeetCode/blob/master/algorithm/src/main/java/leetcode/sequence001To100/Solution01.java)
