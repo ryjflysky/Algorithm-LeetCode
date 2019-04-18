@@ -1,4 +1,4 @@
-package leetcode.sequence1To100;
+package leetcode.sequence001To100;
 
 // 33.搜索旋转排序数组
 /*

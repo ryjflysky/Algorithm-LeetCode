@@ -1,4 +1,4 @@
-package leetcode.sequence1To100;
+package leetcode.sequence001To100;
 
 // 26.删除数组中重复项
 /*

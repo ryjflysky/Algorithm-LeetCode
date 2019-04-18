@@ -1,4 +1,4 @@
-package leetcode.sequence1To50;
+package leetcode.sequence001To100;
 
 //1.两数之和
 
