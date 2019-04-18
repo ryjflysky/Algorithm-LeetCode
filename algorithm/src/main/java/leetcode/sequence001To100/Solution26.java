@@ -42,16 +42,17 @@ for (int i = 0; i < len; i++) {
  */
 public class Solution26 {
 	public int removeDuplicates(int[] nums) {
-		if (null == nums) {
+		if (null == nums) { // 数组为空直接返回
 			return 0;
 		}
-		int count = 1;
+		int count = 1; // 统计长度
+		// 采用双下标i和j，i用于遍历数组nums，j表示当前有效元素的下标
 		for (int i = 0, j = 0; i < nums.length; i++) {
 			if (nums[i] == nums[j]) {
-				continue;
+				continue; // 重复元素直接跳过
 			}
-			nums[++j] = nums[i];
-			count++;
+			nums[++j] = nums[i]; // 不是重复元素移动位置
+			count++; // 统计长度+1
 		}
 		return count;
     }

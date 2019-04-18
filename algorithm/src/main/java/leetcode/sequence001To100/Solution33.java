@@ -24,6 +24,7 @@ package leetcode.sequence001To100;
  */
 public class Solution33 {
 	public int search(int[] nums, int target) {
+		// 数组为空或者元素个数小于0，直接返回-1
 		if (null == nums || nums.length <= 0) {
             return -1;
         }

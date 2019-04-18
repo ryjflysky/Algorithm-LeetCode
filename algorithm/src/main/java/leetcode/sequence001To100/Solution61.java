@@ -6,26 +6,29 @@ import leetcode.ListNode;
 public class Solution61 {
 	public ListNode rotateRight(ListNode head, int k) {
 		if (k <= 0 || null == head || head.next == null) {
-			return head;
+			return head; // 链表为空，或者链表长度为1，旋转次数小于0，直接返回
 		}
 		int len = 1;
 		ListNode p = head;
+		// 计算链表长度
 		while (p.next != null) {
 			len++;
 			p = p.next;
 		}
+		// 重新计算移动次数
 		k = k % len;
 		if (k == 0) {
 			return head;
 		}
 		ListNode q = head;
+		// 找到头结点
 		for (int i = 1; i < len - k; i++) {
 			q = q.next;
 		}
+		// 修改尾结点指向头结点，头结点指向最新的头结点
 		p.next = head;
 		head = q.next;
 		q.next = null;
-		forEach(head);
 		return head;
     }
 	public void forEach(ListNode head) {

@@ -17,8 +17,10 @@ package leetcode.sequence101To200;
 
 输入: [4,1,2,1,2]
 输出: 4
+ */
 
-
+/**
+ *	利用A ^ A = 0   0 ^ C = C 特性进行计算 
  */
 public class Solution136 {
 	public int singleNumber(int[] nums) {

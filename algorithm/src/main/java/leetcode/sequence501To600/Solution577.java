@@ -35,7 +35,7 @@ public class Solution577 {
 		}
 		return new String(s);
 	}
-	// 方法二
+	// 方法二由于方法一
 	public String reverseWords(String s) {
 		char[] arr = s.toCharArray();
 		int index = 0;
