@@ -14,7 +14,7 @@ package leetcode.sequence001To100;
 //所以返回 [0, 1]
 
 // Acc Code
-public class Solution1 {
+public class Solution01 {
 	public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
         if (nums.length <=1) {
