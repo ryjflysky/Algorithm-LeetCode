@@ -1,4 +1,4 @@
-package leetcode.sequence51To100;
+package leetcode.sequence1To100;
 
 import java.util.List;
 
